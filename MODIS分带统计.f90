@@ -9,13 +9,13 @@
     reaL(8) Du(5),Xiang(9),DuMian(5),XiangMian(9)
 
 
-    open(111,file='é«˜ç¨‹.txt')
-    open(222,file='å¡åº¦.txt')
-    open(333,file='å¡å‘.txt')
+    open(111,file='¸ß³Ì.txt')
+    open(222,file='ÆÂ¶È.txt')
+    open(333,file='ÆÂÏò.txt')
 
-    !open(555,file='ç»“æœ.csv')
+    !open(555,file='½á¹û.csv')
 
-    write(*,*)'******** è¾“å…¥ä½ çš„å¤„ç†æ•°é‡ï¼š      ********'
+    write(*,*)'******** ÊäÈëÄãµÄ´¦ÀíÊıÁ¿£º      ********'
     read(*,*)Time
 
 
@@ -30,13 +30,13 @@
         read(333,*)
     ENDDO
 
-    write(*,*)'******** è¾“å…¥ä½ çš„é«˜ç¨‹å¸¦æ•°é‡ï¼š      ********'
+    write(*,*)'******** ÊäÈëÄãµÄ¸ß³Ì´øÊıÁ¿£º      ********'
     read(*,*)N
 
     allocate (DEM(hang,lie),PoDu(hang,lie),PoXiang(hang,lie),JiXue(hang,lie),Gaocheng(N),JieDian(N),DaiMian(N))
 
     DO i=1,N
-        write(*,*)'******** è¾“å…¥ç¬¬',i,'ä¸€ä¸ªæ–­ç‚¹é«˜ç¨‹ï¼š      ********'
+        write(*,*)'******** ÊäÈëµÚ',i,'Ò»¸ö¶Ïµã¸ß³Ì£º      ********'
         read(*,*)JieDian(i)
     ENDDO
 
@@ -50,7 +50,7 @@
         write(Hao,'(I2)')M
 
         open(444,file=Trim(Hao))
-        open(555,file='ç»“æœ'//Trim(Hao)//'.csv')
+        open(555,file='½á¹û'//Trim(Hao)//'.csv')
         DO i=1,6
             read(444,*)
         ENDDO
